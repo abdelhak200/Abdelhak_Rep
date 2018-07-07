@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-mag-2014 2.59.41 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+  <class catalog="logintest" name="com.hibernateClass.UserRegistration" table="user_registration">
+    <id name="index" type="java.lang.Integer">
+      <column name="index"/>
+      <generator class="identity"/>
+    </id>
+    <property name="userName" type="string">
+      <column length="100" name="userName" not-null="true"/>
+    </property>
+    <property name="password" type="string">
+      <column length="100" name="password" not-null="true"/>
+    </property>
+    <property name="email" type="string">
+      <column length="50" name="email" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
